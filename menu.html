@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="description"
+      content="The full menu at Maison du Café — espresso bar, signature coffee, filter coffee, iced coffee, tea and pastries, in CHF."
+    />
+    <title>Menu — Maison du Café</title>
+    <meta property="og:site_name" content="Maison du Café" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Menu — Maison du Café" />
+    <meta
+      property="og:description"
+      content="The full menu at Maison du Café — espresso bar, signature coffee, filter coffee, iced coffee, tea and pastries, in CHF."
+    />
+    <meta property="og:image" content="/images/photos/latte-art-cappuccino.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Menu — Maison du Café" />
+    <meta
+      name="twitter:description"
+      content="The full menu at Maison du Café — espresso bar, signature coffee, filter coffee, iced coffee, tea and pastries, in CHF."
+    />
+    <meta name="twitter:image" content="/images/photos/latte-art-cappuccino.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+    <link rel="stylesheet" href="/src/styles/page-hero.css" />
+    <link rel="stylesheet" href="/src/styles/menu.css" />
+  </head>
+  <body data-i18n-page="menu">
+    <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">Skip to content</a>
+
+    <header class="site-header" data-nav>
+      <div class="site-header__inner">
+        <a class="brand" href="/index.html">
+          <span class="brand__mark">MC</span>
+          <span class="brand__name">Maison du Café</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="/index.html" data-i18n="nav.home">Home</a>
+          <a href="/menu.html" aria-current="page" data-i18n="nav.menu">Menu</a>
+          <a href="/story.html" data-i18n="nav.story">Our Story</a>
+          <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch" role="group" data-i18n-attr="aria-label:a11y.langSwitcherLabel">
+            <button type="button" data-lang-switch="en" aria-pressed="true">EN</button>
+            <span class="lang-switch__sep" aria-hidden="true">·</span>
+            <button type="button" data-lang-switch="fr" aria-pressed="false">FR</button>
+          </div>
+          <a class="btn btn--primary header-cta" href="/contact.html" data-i18n="nav.visitUs">Visit Us</a>
+          <button
+            type="button"
+            class="nav-toggle"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-i18n-attr="aria-label:a11y.toggleMenu"
+            aria-label="Toggle menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+      <nav aria-label="Mobile">
+        <a href="/index.html" data-i18n="nav.home">Home</a>
+        <a href="/menu.html" aria-current="page" data-i18n="nav.menu">Menu</a>
+        <a href="/story.html" data-i18n="nav.story">Our Story</a>
+        <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--block mobile-nav__cta" href="/contact.html" data-i18n="nav.visitUs">Visit Us</a>
+    </div>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero__media">
+          <picture>
+            <source srcset="/images/photos/latte-art-cappuccino.webp" type="image/webp" />
+            <img
+              src="/images/photos/latte-art-cappuccino.jpg"
+              alt="A cappuccino with delicate rosetta latte art"
+              data-i18n-attr="alt:alt.latteArtCappuccino"
+              width="1400"
+              height="2100"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="container">
+          <div class="page-hero__content">
+            <p class="eyebrow" data-i18n="menuPage.eyebrow">The Menu</p>
+            <h1 data-i18n="menuPage.h1">Espresso, Filter &amp; a Few Good Pastries</h1>
+            <p data-i18n="menuPage.p">Prices in Swiss francs. Ask your barista about today's rotating single origin.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <p class="menu-intro lede" data-reveal data-i18n="menuPage.intro">
+            Our menu stays short on purpose. Every drink is built around beans we taste and re-taste before they
+            ever reach the bar, and every pastry is baked in small batches each morning.
+          </p>
+        </div>
+      </section>
+
+      <nav class="menu-jump" aria-label="Jump to menu category">
+        <div class="menu-jump__scroll" data-menu-jump></div>
+      </nav>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div data-menu-sections></div>
+
+          <p class="menu-note-banner" data-i18n="menuPage.note">
+            Menu items and prices are demonstration content created for this portfolio project and do not reflect
+            a real, operating business.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="/index.html">
+              <span class="brand__mark">MC</span>
+              <span class="brand__name">Maison du Café</span>
+            </a>
+            <p data-i18n="footer.tagline">A specialty coffee bar in the heart of Geneva — slow coffee, quietly done.</p>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.navigate">Navigate</h4>
+            <ul>
+              <li><a href="/index.html" data-i18n="nav.home">Home</a></li>
+              <li><a href="/menu.html" data-i18n="nav.menu">Menu</a></li>
+              <li><a href="/story.html" data-i18n="nav.story">Our Story</a></li>
+              <li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.visit">Visit</h4>
+            <ul>
+              <li data-location-address>Rue des Étuves 14, 1201 Genève, Suisse</li>
+              <li><a data-location-phone href="tel:+41223456789">+41 22 345 67 89</a></li>
+              <li><a data-location-email href="mailto:bonjour@maisonducafe-demo.ch">bonjour@maisonducafe-demo.ch</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.hours">Hours</h4>
+            <ul class="hours-list" data-hours-list></ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p data-i18n="footer.copyright">© 2026 Maison du Café. A fictional brand — portfolio demo by OLVER.</p>
+          <div class="footer-bottom__links">
+            <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

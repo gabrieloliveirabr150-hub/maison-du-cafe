@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="description"
+      content="Maison du Café — a specialty coffee bar in Geneva. Single-origin espresso, hand-poured filter coffee and pastries baked each morning, served in a dark, cinematic room built for lingering."
+    />
+    <title>Maison du Café — Specialty Coffee Bar in Geneva</title>
+    <meta property="og:site_name" content="Maison du Café" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Maison du Café — Specialty Coffee Bar in Geneva" />
+    <meta
+      property="og:description"
+      content="Maison du Café — a specialty coffee bar in Geneva. Single-origin espresso, hand-poured filter coffee and pastries baked each morning, served in a dark, cinematic room built for lingering."
+    />
+    <meta property="og:image" content="/images/photos/hero-espresso-pour.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Maison du Café — Specialty Coffee Bar in Geneva" />
+    <meta
+      name="twitter:description"
+      content="Maison du Café — a specialty coffee bar in Geneva. Single-origin espresso, hand-poured filter coffee and pastries baked each morning, served in a dark, cinematic room built for lingering."
+    />
+    <meta name="twitter:image" content="/images/photos/hero-espresso-pour.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+    <link rel="stylesheet" href="/src/styles/home.css" />
+  </head>
+  <body data-i18n-page="home">
+    <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">Skip to content</a>
+
+    <header class="site-header" data-nav>
+      <div class="site-header__inner">
+        <a class="brand" href="/index.html">
+          <span class="brand__mark">MC</span>
+          <span class="brand__name">Maison du Café</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="/index.html" aria-current="page" data-i18n="nav.home">Home</a>
+          <a href="/menu.html" data-i18n="nav.menu">Menu</a>
+          <a href="/story.html" data-i18n="nav.story">Our Story</a>
+          <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch" role="group" data-i18n-attr="aria-label:a11y.langSwitcherLabel">
+            <button type="button" data-lang-switch="en" aria-pressed="true">EN</button>
+            <span class="lang-switch__sep" aria-hidden="true">·</span>
+            <button type="button" data-lang-switch="fr" aria-pressed="false">FR</button>
+          </div>
+          <a class="btn btn--primary header-cta" href="/menu.html" data-i18n="nav.viewMenu">View Menu</a>
+          <button
+            type="button"
+            class="nav-toggle"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-i18n-attr="aria-label:a11y.toggleMenu"
+            aria-label="Toggle menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+      <nav aria-label="Mobile">
+        <a href="/index.html" aria-current="page" data-i18n="nav.home">Home</a>
+        <a href="/menu.html" data-i18n="nav.menu">Menu</a>
+        <a href="/story.html" data-i18n="nav.story">Our Story</a>
+        <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--block mobile-nav__cta" href="/menu.html" data-i18n="nav.viewMenu">View Menu</a>
+    </div>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero__media">
+          <picture>
+            <source srcset="/images/photos/hero-espresso-pour.webp" type="image/webp" />
+            <img
+              src="/images/photos/hero-espresso-pour.jpg"
+              alt="Espresso dripping from a portafilter into a cup at the espresso bar"
+              data-i18n-attr="alt:alt.heroEspressoPour"
+              width="2000"
+              height="3000"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="container">
+          <div class="hero__content">
+            <p class="eyebrow" data-i18n="home.hero.eyebrow">Specialty Coffee Bar — Geneva</p>
+            <h1 data-i18n="home.hero.h1">Coffee, Poured With Intention</h1>
+            <p class="hero__lede" data-i18n="home.hero.lede">
+              A quiet corner for serious coffee — single-origin espresso, hand-poured filter, and pastries baked
+              each morning.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn--primary" href="/menu.html" data-i18n="home.hero.cta1">Explore Our Menu</a>
+              <a class="btn btn--ghost" href="/story.html" data-i18n="home.hero.cta2">Discover Our Story</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="intro">
+            <div class="intro__media media-frame" data-reveal>
+              <picture>
+                <source srcset="/images/photos/barista-hands-portafilter.webp" type="image/webp" />
+                <img
+                  src="/images/photos/barista-hands-portafilter.jpg"
+                  alt="A barista's hands steadying a portafilter mid-extraction"
+                  data-i18n-attr="alt:alt.baristaHandsPortafilter"
+                  width="1800"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="intro__text" data-reveal>
+              <p class="eyebrow" data-i18n="home.intro.eyebrow">Specialty, Not Incidental</p>
+              <h2 data-i18n="home.intro.h2">Coffee treated like a craft, not a commodity.</h2>
+              <p data-i18n="home.intro.p1">
+                Every cup starts with beans chosen for character, roasted in small batches and dialled in by hand,
+                one grinder setting at a time. We brew to taste, not to the clock.
+              </p>
+              <p data-i18n="home.intro.p2">
+                It is a slower way to run a coffee bar. We think it is the only way worth running one.
+              </p>
+              <a class="btn btn--ghost" href="/story.html" data-i18n="home.intro.cta">Meet the people behind the bar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow" data-i18n="home.signature.eyebrow">Signature Selection</p>
+            <h2 data-i18n="home.signature.h2">A few of our favourites</h2>
+            <p class="lede" data-i18n="home.signature.lede">Three ways to start — espresso-forward, slow-poured, or over ice.</p>
+          </div>
+          <div class="drink-grid drink-grid--3">
+            <article class="drink-card" data-reveal>
+              <div class="drink-card__media drink-card__media--tall media-frame">
+                <picture>
+                  <source srcset="/images/photos/latte-art-heart.webp" type="image/webp" />
+                  <img
+                    src="/images/photos/latte-art-heart.jpg"
+                    alt="A heart latte art pour resting on a bed of roasted coffee beans"
+                    data-i18n-attr="alt:alt.latteArtHeart"
+                    width="1400"
+                    height="2100"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="drink-card__body">
+                <div class="drink-card__row">
+                  <h3 data-i18n="home.card1.name">House Signature Coffee</h3>
+                  <span class="drink-card__price">CHF 6.80</span>
+                </div>
+                <p class="drink-card__desc" data-i18n="home.card1.desc">
+                  Our seasonal espresso blend, steamed milk, cocoa nib and orange zest.
+                </p>
+                <a class="drink-card__link" href="/menu.html#signature-coffee" data-i18n="home.seeFullMenu">See full menu →</a>
+              </div>
+            </article>
+
+            <article class="drink-card" data-reveal>
+              <div class="drink-card__media drink-card__media--tall media-frame">
+                <picture>
+                  <source srcset="/images/photos/pour-over-v60.webp" type="image/webp" />
+                  <img
+                    src="/images/photos/pour-over-v60.jpg"
+                    alt="Hot water poured over coffee grounds in a V60 pour-over filter"
+                    data-i18n-attr="alt:alt.pourOverV60"
+                    width="1500"
+                    height="2250"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="drink-card__body">
+                <div class="drink-card__row">
+                  <h3 data-i18n="home.card2.name">V60 Pour-Over</h3>
+                  <span class="drink-card__price">CHF 6.50</span>
+                </div>
+                <p class="drink-card__desc" data-i18n="home.card2.desc">Hand-poured to order — ask about today's single origin.</p>
+                <a class="drink-card__link" href="/menu.html#filter-coffee" data-i18n="home.seeFullMenu">See full menu →</a>
+              </div>
+            </article>
+
+            <article class="drink-card" data-reveal>
+              <div class="drink-card__media media-frame">
+                <picture>
+                  <source srcset="/images/photos/iced-coffee-glass.webp" type="image/webp" />
+                  <img
+                    src="/images/photos/iced-coffee-glass.jpg"
+                    alt="A hand holding a glass of iced coffee with cream swirling through it"
+                    data-i18n-attr="alt:alt.icedCoffeeGlass"
+                    width="1600"
+                    height="1066"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <div class="drink-card__body">
+                <div class="drink-card__row">
+                  <h3 data-i18n="home.card3.name">Iced Signature Coffee</h3>
+                  <span class="drink-card__price">CHF 6.80</span>
+                </div>
+                <p class="drink-card__desc" data-i18n="home.card3.desc">Our seasonal blend, shaken over ice.</p>
+                <a class="drink-card__link" href="/menu.html#iced-coffee" data-i18n="home.seeFullMenu">See full menu →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="pairing">
+            <div class="pairing__text" data-reveal>
+              <p class="eyebrow" data-i18n="home.pairing.eyebrow">Coffee &amp; Pastry</p>
+              <h2 data-i18n="home.pairing.h2">Pairings worth lingering over</h2>
+              <p class="lede" data-i18n="home.pairing.lede">
+                Our pastry case changes with the season, but the instinct stays the same: something flaky with
+                espresso, something rich with filter.
+              </p>
+            </div>
+            <div class="pairing__media media-frame" data-reveal>
+              <picture>
+                <source srcset="/images/photos/pastries-croissants.webp" type="image/webp" />
+                <img
+                  src="/images/photos/pastries-croissants.jpg"
+                  alt="A stack of freshly baked, golden croissants on a wooden board"
+                  data-i18n-attr="alt:alt.pastriesCroissants"
+                  width="1800"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="pairing__media pairing__media--tall media-frame" data-reveal>
+              <picture>
+                <source srcset="/images/photos/latte-art-cappuccino.webp" type="image/webp" />
+                <img
+                  src="/images/photos/latte-art-cappuccino.jpg"
+                  alt="A cappuccino with delicate rosetta latte art"
+                  data-i18n-attr="alt:alt.latteArtCappuccino"
+                  width="1400"
+                  height="2100"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="cta-row" style="margin-top: 2rem">
+            <a class="btn btn--ghost" href="/menu.html#pastries" data-i18n="home.pairing.cta">View Pastries &amp; Light Bites</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="atmosphere">
+        <div class="atmosphere__media">
+          <picture>
+            <source srcset="/images/photos/cafe-interior-rustic.webp" type="image/webp" />
+            <img
+              src="/images/photos/cafe-interior-rustic.jpg"
+              alt="The warm, rustic interior of the café with wood tables and soft lighting"
+              data-i18n-attr="alt:alt.cafeInteriorRustic"
+              width="1800"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="container">
+          <div class="atmosphere__content" data-reveal>
+            <p class="eyebrow" data-i18n="home.atmosphere.eyebrow">The Atmosphere</p>
+            <blockquote data-i18n="home.atmosphere.quote">"A room built for lingering — dark wood, low light, and coffee you can taste."</blockquote>
+            <p data-i18n="home.atmosphere.p">
+              We designed the space the same way we approach the coffee: unhurried. Come for an espresso at the
+              bar, or stay for the afternoon with a book and a pour-over.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="location-preview">
+            <div class="location-preview__media media-frame" data-reveal>
+              <picture>
+                <source srcset="/images/photos/cafe-terrace-night.webp" type="image/webp" />
+                <img
+                  src="/images/photos/cafe-terrace-night.jpg"
+                  alt="Candlelit café tables on a quiet city street at night"
+                  data-i18n-attr="alt:alt.cafeTerraceNight"
+                  width="1800"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div data-reveal>
+              <p class="eyebrow" data-i18n="home.visit.eyebrow">Visit Us</p>
+              <h2 data-i18n="home.visit.h2">Find us in the city centre</h2>
+              <div class="location-card">
+                <div class="card">
+                  <h3 data-i18n="home.visit.addressHeading">Address</h3>
+                  <p data-location-address>Rue des Étuves 14, 1201 Genève, Suisse</p>
+                  <a
+                    class="btn btn--ghost btn--block"
+                    data-map-link
+                    href="https://www.google.com/maps/search/?api=1&query=Rue%20des%20%C3%89tuves%2014%2C%201201%20Gen%C3%A8ve%2C%20Switzerland"
+                    target="_blank"
+                    rel="noopener"
+                    data-i18n="home.visit.getDirections"
+                    >Get Directions</a
+                  >
+                </div>
+                <div class="card">
+                  <h3 data-i18n="home.visit.hoursHeading">Hours</h3>
+                  <ul class="hours-list" data-hours-list></ul>
+                </div>
+              </div>
+              <div class="cta-row" style="margin-top: 1.5rem">
+                <a class="btn btn--primary" href="/contact.html" data-i18n="home.visit.fullContact">Full Contact Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="/index.html">
+              <span class="brand__mark">MC</span>
+              <span class="brand__name">Maison du Café</span>
+            </a>
+            <p data-i18n="footer.tagline">A specialty coffee bar in the heart of Geneva — slow coffee, quietly done.</p>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.navigate">Navigate</h4>
+            <ul>
+              <li><a href="/index.html" data-i18n="nav.home">Home</a></li>
+              <li><a href="/menu.html" data-i18n="nav.menu">Menu</a></li>
+              <li><a href="/story.html" data-i18n="nav.story">Our Story</a></li>
+              <li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.visit">Visit</h4>
+            <ul>
+              <li data-location-address>Rue des Étuves 14, 1201 Genève, Suisse</li>
+              <li><a data-location-phone href="tel:+41223456789">+41 22 345 67 89</a></li>
+              <li><a data-location-email href="mailto:bonjour@maisonducafe-demo.ch">bonjour@maisonducafe-demo.ch</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.hours">Hours</h4>
+            <ul class="hours-list" data-hours-list></ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p data-i18n="footer.copyright">© 2026 Maison du Café. A fictional brand — portfolio demo by OLVER.</p>
+          <div class="footer-bottom__links">
+            <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

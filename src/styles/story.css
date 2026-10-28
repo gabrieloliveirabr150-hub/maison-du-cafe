@@ -1,0 +1,84 @@
+.story-lede {
+  max-width: 44rem;
+}
+
+.story-lede p {
+  font-size: var(--fs-lead);
+}
+
+.editorial-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  align-items: center;
+  padding: var(--space-8) 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.editorial-row:first-of-type {
+  border-top: none;
+}
+
+.editorial-row__media {
+  aspect-ratio: 4 / 5;
+}
+
+/* Landscape source photos lose roughly half their width in this portrait
+   frame — at every width, since the layout reverts to the single-column 4/5
+   frame above the two-column breakpoint too, not just below it. */
+.editorial-row__media--wide {
+  aspect-ratio: 4 / 3;
+}
+
+.editorial-row__text {
+  max-width: 40rem;
+}
+
+.editorial-row__text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 56rem) {
+  .editorial-row {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-9);
+  }
+
+  .editorial-row--reverse .editorial-row__media {
+    order: 2;
+  }
+
+  .editorial-row--reverse .editorial-row__text {
+    order: 1;
+  }
+}
+
+.pull-quote {
+  margin: 0;
+  padding: var(--space-7) 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-ivory);
+  max-width: 36rem;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.story-values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.story-value h3 {
+  color: var(--color-accent);
+}
+
+@media (min-width: 42rem) {
+  .story-values {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

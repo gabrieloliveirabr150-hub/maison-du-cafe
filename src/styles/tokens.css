@@ -1,0 +1,68 @@
+:root {
+  /* Palette */
+  --color-charcoal: #15120f;
+  --color-charcoal-soft: #201b17;
+  --color-espresso: #2a1d15;
+  --color-espresso-soft: #352419;
+  --color-ivory: #f3ece1;
+  --color-ivory-dim: #cdbfac;
+  --color-accent: #c17f45;
+  --color-accent-soft: rgba(193, 127, 69, 0.16);
+  --color-line: rgba(243, 236, 225, 0.12);
+  --color-line-strong: rgba(243, 236, 225, 0.22);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --fs-eyebrow: 0.76rem;
+  --fs-body: 1rem;
+  --fs-lead: 1.125rem;
+  --fs-h1: clamp(2.4rem, 8vw, 4.6rem);
+  --fs-h2: clamp(1.9rem, 5vw, 2.9rem);
+  --fs-h3: clamp(1.3rem, 3vw, 1.7rem);
+
+  /* Spacing — mobile-first, scales up at the breakpoint below */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.25rem;
+  --space-8: 2.75rem;
+  --space-9: 3.5rem;
+  --space-10: 6rem;
+
+  /* Layout */
+  --container-max: 1240px;
+  --container-pad: var(--space-5);
+  --radius: 3px;
+  --radius-lg: 10px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --duration-fast: 160ms;
+  --duration: 380ms;
+  --duration-slow: 640ms;
+
+  /* Layering — mobile-nav is now a sibling of site-header (not nested inside
+     it), so it must outrank the header's own stacking context explicitly. */
+  --z-header: 100;
+  --z-mobile-nav: 150;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --space-7: 3rem;
+    --space-8: 4.5rem;
+    --space-9: 6.5rem;
+    --space-10: 9rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  :root {
+    --container-pad: var(--space-7);
+  }
+}

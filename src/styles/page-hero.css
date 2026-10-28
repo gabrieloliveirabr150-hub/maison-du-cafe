@@ -1,0 +1,52 @@
+.page-hero {
+  position: relative;
+  z-index: 0; /* contains its own media/content layering locally */
+  min-height: 46vh;
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-ivory);
+  overflow: hidden;
+}
+
+.page-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.page-hero__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-hero__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(21, 18, 15, 0.35) 0%, rgba(21, 18, 15, 0.55) 55%, rgba(21, 18, 15, 0.94) 100%);
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-9) 0 var(--space-7);
+  max-width: 44rem;
+}
+
+.page-hero__content .eyebrow {
+  color: var(--color-accent);
+}
+
+.page-hero__content p {
+  color: var(--color-ivory-dim);
+  max-width: 40ch;
+}
+
+@media (min-width: 48rem) {
+  .page-hero {
+    min-height: 52vh;
+  }
+}

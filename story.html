@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="description"
+      content="The philosophy behind Maison du Café — a Geneva specialty coffee bar built around thoughtful sourcing, careful preparation and a room designed for lingering."
+    />
+    <title>Our Story — Maison du Café</title>
+    <meta property="og:site_name" content="Maison du Café" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Our Story — Maison du Café" />
+    <meta
+      property="og:description"
+      content="The philosophy behind Maison du Café — a Geneva specialty coffee bar built around thoughtful sourcing, careful preparation and a room designed for lingering."
+    />
+    <meta property="og:image" content="/images/photos/coffee-beans-dark.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Story — Maison du Café" />
+    <meta
+      name="twitter:description"
+      content="The philosophy behind Maison du Café — a Geneva specialty coffee bar built around thoughtful sourcing, careful preparation and a room designed for lingering."
+    />
+    <meta name="twitter:image" content="/images/photos/coffee-beans-dark.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/tokens.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+    <link rel="stylesheet" href="/src/styles/page-hero.css" />
+    <link rel="stylesheet" href="/src/styles/story.css" />
+  </head>
+  <body data-i18n-page="story">
+    <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">Skip to content</a>
+
+    <header class="site-header" data-nav>
+      <div class="site-header__inner">
+        <a class="brand" href="/index.html">
+          <span class="brand__mark">MC</span>
+          <span class="brand__name">Maison du Café</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="/index.html" data-i18n="nav.home">Home</a>
+          <a href="/menu.html" data-i18n="nav.menu">Menu</a>
+          <a href="/story.html" aria-current="page" data-i18n="nav.story">Our Story</a>
+          <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch" role="group" data-i18n-attr="aria-label:a11y.langSwitcherLabel">
+            <button type="button" data-lang-switch="en" aria-pressed="true">EN</button>
+            <span class="lang-switch__sep" aria-hidden="true">·</span>
+            <button type="button" data-lang-switch="fr" aria-pressed="false">FR</button>
+          </div>
+          <a class="btn btn--primary header-cta" href="/menu.html" data-i18n="nav.viewMenu">View Menu</a>
+          <button
+            type="button"
+            class="nav-toggle"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-i18n-attr="aria-label:a11y.toggleMenu"
+            aria-label="Toggle menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+      <nav aria-label="Mobile">
+        <a href="/index.html" data-i18n="nav.home">Home</a>
+        <a href="/menu.html" data-i18n="nav.menu">Menu</a>
+        <a href="/story.html" aria-current="page" data-i18n="nav.story">Our Story</a>
+        <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--block mobile-nav__cta" href="/menu.html" data-i18n="nav.viewMenu">View Menu</a>
+    </div>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero__media">
+          <picture>
+            <source srcset="/images/photos/coffee-beans-dark.webp" type="image/webp" />
+            <img
+              src="/images/photos/coffee-beans-dark.jpg"
+              alt="Close-up of dark roasted coffee beans"
+              data-i18n-attr="alt:alt.coffeeBeansDark"
+              width="1400"
+              height="2100"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="container">
+          <div class="page-hero__content">
+            <p class="eyebrow" data-i18n="storyPage.eyebrow">Our Story</p>
+            <h1 data-i18n="storyPage.h1">Coffee, Considered</h1>
+            <p data-i18n="storyPage.p">Why we built a room around something as small as a cup of coffee.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="story-lede" data-reveal>
+            <p data-i18n="storyPage.lede">
+              Maison du Café began with a simple frustration: good coffee shouldn't require a compromise between
+              quality and atmosphere. So we built both — a bar serious enough for people who care about extraction
+              time, and a room comfortable enough to spend an afternoon in.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="editorial-row" data-reveal>
+            <div class="editorial-row__media editorial-row__media--wide media-frame">
+              <picture>
+                <source srcset="/images/photos/barista-hands-portafilter.webp" type="image/webp" />
+                <img
+                  src="/images/photos/barista-hands-portafilter.jpg"
+                  alt="A barista's hands steadying a portafilter mid-extraction"
+                  data-i18n-attr="alt:alt.baristaHandsPortafilter"
+                  width="1800"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="editorial-row__text">
+              <p class="eyebrow" data-i18n="storyPage.philosophy.eyebrow">Our Philosophy</p>
+              <h2 data-i18n="storyPage.philosophy.h2">Quality is a decision made in advance.</h2>
+              <p data-i18n="storyPage.philosophy.p1">
+                We taste every batch before it goes on the bar. Grinders are dialled in by hand, shot by shot,
+                until the balance is right — not once a week, but as the day's temperature and humidity shift.
+              </p>
+              <p data-i18n="storyPage.philosophy.p2">
+                It means slower mornings and the occasional wait. We think the cup is worth it, and so do the
+                people who keep coming back.
+              </p>
+            </div>
+          </div>
+
+          <blockquote class="pull-quote" data-reveal data-i18n="storyPage.quote">
+            "We would rather make forty excellent cups a day than four hundred forgettable ones."
+          </blockquote>
+
+          <div class="editorial-row editorial-row--reverse" data-reveal>
+            <div class="editorial-row__media editorial-row__media--wide media-frame">
+              <picture>
+                <source srcset="/images/photos/cafe-interior-rustic.webp" type="image/webp" />
+                <img
+                  src="/images/photos/cafe-interior-rustic.jpg"
+                  alt="The warm, rustic interior of the café with wood tables and soft lighting"
+                  data-i18n-attr="alt:alt.cafeInteriorRustic"
+                  width="1800"
+                  height="1200"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="editorial-row__text">
+              <p class="eyebrow" data-i18n="storyPage.room.eyebrow">The Room</p>
+              <h2 data-i18n="storyPage.room.h2">A space designed to slow you down.</h2>
+              <p data-i18n="storyPage.room.p1">
+                Dark wood, low light and worn textures — the room was built to feel lived-in from the first week,
+                not polished for a photograph. We wanted somewhere people would choose to stay, not just pass
+                through.
+              </p>
+              <p data-i18n="storyPage.room.p2">
+                Tables are spaced for conversation or solitude, whichever the afternoon calls for.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow" data-i18n="storyPage.values.eyebrow">What We Hold To</p>
+            <h2 data-i18n="storyPage.values.h2">Three things that don't change</h2>
+          </div>
+          <div class="story-values">
+            <div class="story-value card" data-reveal>
+              <h3 data-i18n="storyPage.values.sourcing.h3">Sourcing</h3>
+              <p data-i18n="storyPage.values.sourcing.p">We choose beans for character and traceability, and rotate our single origins through the year.</p>
+            </div>
+            <div class="story-value card" data-reveal>
+              <h3 data-i18n="storyPage.values.craft.h3">Craft</h3>
+              <p data-i18n="storyPage.values.craft.p">Every method on the menu — espresso, pour-over, cold brew — is brewed to a standard, not a shortcut.</p>
+            </div>
+            <div class="story-value card" data-reveal>
+              <h3 data-i18n="storyPage.values.hospitality.h3">Hospitality</h3>
+              <p data-i18n="storyPage.values.hospitality.p">We remember names, we remember orders, and we'd rather talk you through the menu than rush you.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="editorial-row" data-reveal>
+            <div class="editorial-row__media media-frame">
+              <picture>
+                <source srcset="/images/photos/pour-over-v60.webp" type="image/webp" />
+                <img
+                  src="/images/photos/pour-over-v60.jpg"
+                  alt="Hot water poured over coffee grounds in a V60 pour-over filter"
+                  data-i18n-attr="alt:alt.pourOverV60"
+                  width="1500"
+                  height="2250"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="editorial-row__text">
+              <p class="eyebrow" data-i18n="storyPage.preparation.eyebrow">Thoughtful Preparation</p>
+              <h2 data-i18n="storyPage.preparation.h2">Brewed to the method, not around it.</h2>
+              <p data-i18n="storyPage.preparation.p1">
+                Pour-over asks for patience; espresso asks for precision. We treat each brewing method on its own
+                terms instead of forcing one approach onto every cup.
+              </p>
+              <p data-i18n="storyPage.preparation.p2">Ask your barista which method suits the bean you're curious about — they'll have an opinion.</p>
+              <a class="btn btn--ghost" href="/menu.html" data-i18n="storyPage.preparation.cta">See how we brew it</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="/index.html">
+              <span class="brand__mark">MC</span>
+              <span class="brand__name">Maison du Café</span>
+            </a>
+            <p data-i18n="footer.tagline">A specialty coffee bar in the heart of Geneva — slow coffee, quietly done.</p>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.navigate">Navigate</h4>
+            <ul>
+              <li><a href="/index.html" data-i18n="nav.home">Home</a></li>
+              <li><a href="/menu.html" data-i18n="nav.menu">Menu</a></li>
+              <li><a href="/story.html" data-i18n="nav.story">Our Story</a></li>
+              <li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.visit">Visit</h4>
+            <ul>
+              <li data-location-address>Rue des Étuves 14, 1201 Genève, Suisse</li>
+              <li><a data-location-phone href="tel:+41223456789">+41 22 345 67 89</a></li>
+              <li><a data-location-email href="mailto:bonjour@maisonducafe-demo.ch">bonjour@maisonducafe-demo.ch</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-i18n="footer.hours">Hours</h4>
+            <ul class="hours-list" data-hours-list></ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p data-i18n="footer.copyright">© 2026 Maison du Café. A fictional brand — portfolio demo by OLVER.</p>
+          <div class="footer-bottom__links">
+            <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
